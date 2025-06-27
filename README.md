@@ -2,7 +2,7 @@
 
 Welcome! 👋  
 This repository contains the source code for my personal website:  
-🌐 **[agathos316.github.io](https://agathos316.github.io)**
+🌐 **[https://agathos316.github.io/Agathos316/](https://agathos316.github.io/Agathos316/)**
 
 I'm Tim Mapperson — a technologist, communicator, and coach. I work at the intersection of:
 
