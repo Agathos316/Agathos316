@@ -1,16 +1,26 @@
-## Hi there 👋
+# Tim Mapperson – Personal Website
 
-<!--
-**Agathos316/Agathos316** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Welcome! 👋  
+This repository contains the source code for my personal website:  
+🌐 **[agathos316.github.io](https://agathos316.github.io)**
 
-Here are some ideas to get you started:
+I'm Tim Mapperson — a technologist, communicator, and coach. I work at the intersection of:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- **AI & Automation** – Building smart workflows using tools like Slack, Airtable, Zapier, and Make
+- **Technical Content** – Writing for developer communities, from blogs to documentation to strategy
+- **Blockchain & Smart Contracts** – Developing dApps, trading bots, and Web3 integrations
+- **Human Leadership** – Coaching, mentoring, and managing relationships with empathy and clarity
+
+My mission is to build foundations on which individuals and communities can thrive — and to pass it on for generations to come.
+
+---
+
+## 📫 Get in Touch
+
+- 💼 [LinkedIn](https://linkedin.com/in/tim-mapperson)
+- 🛠 [GitHub](https://github.com/Agathos316)
+- 📬 Email: `mappersont2010 [at] gmail [dot] com`
+
+---
+
+Thanks for visiting — the site is lightweight by design and evolving as I continue building and writing.
