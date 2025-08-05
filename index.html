@@ -7,12 +7,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #114477;
+      --primary: #0a2540;
       --accent: #2b8cff;
       --background: #f4f7fa;
       --white: #ffffff;
       --text: #1a1a1a;
       --muted: #6a7b89;
+      --gradient: linear-gradient(135deg, #0f4471 0%, #2b8cff 100%);
     }
 
     * {
@@ -24,16 +25,17 @@
     body {
       font-family: 'Inter', sans-serif;
       color: var(--text);
-      background: var(--background);
+      background: radial-gradient(circle at 30% 20%, #e9f0f9 0%, #f9fbfc 100%);
       line-height: 1.6;
     }
 
     header {
-      background: var(--primary);
+      background: var(--gradient);
       color: var(--white);
-      padding: 4rem 2rem 3rem;
+      padding: 5rem 2rem 4rem;
       text-align: center;
       position: relative;
+      overflow: hidden;
     }
 
     header::after {
@@ -42,9 +44,10 @@
       bottom: -30px;
       left: 50%;
       transform: translateX(-50%);
-      width: 80px;
+      width: 90px;
       height: 6px;
-      background: var(--accent);
+      background: #fff;
+      opacity: 0.4;
       border-radius: 3px;
     }
 
@@ -52,6 +55,9 @@
       font-size: 2.8rem;
       margin-bottom: 0.5rem;
       font-weight: 800;
+      background: linear-gradient(to right, #ffffff, #d4e8ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     header p {
@@ -60,20 +66,24 @@
       font-weight: 400;
     }
 
-    nav {
-      text-align: center;
-      margin: 4rem 0 2rem;
+    nav.contact-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.2rem;
+      margin: 3rem 0 2rem;
+      flex-wrap: wrap;
+      font-size: 1.05rem;
     }
 
-    nav a {
-      margin: 0 1.5rem;
+    nav.contact-links a {
       color: var(--accent);
       text-decoration: none;
       font-weight: 600;
       position: relative;
     }
 
-    nav a::after {
+    nav.contact-links a::after {
       content: '';
       display: block;
       width: 0%;
@@ -83,8 +93,13 @@
       margin-top: 4px;
     }
 
-    nav a:hover::after {
+    nav.contact-links a:hover::after {
       width: 100%;
+    }
+
+    nav.contact-links .divider {
+      color: var(--muted);
+      font-weight: 400;
     }
 
     section {
@@ -92,8 +107,21 @@
       margin: 0 auto 2.5rem;
       padding: 2.5rem;
       background: var(--white);
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border-radius: 14px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    section::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 150px;
+      height: 150px;
+      background: radial-gradient(circle at center, rgba(43,140,255,0.1) 0%, transparent 70%);
+      z-index: 0;
     }
 
     section h2 {
@@ -102,6 +130,7 @@
       color: var(--primary);
       position: relative;
       font-weight: 600;
+      z-index: 1;
     }
 
     section h2::after {
@@ -113,6 +142,11 @@
       height: 3px;
       background: var(--accent);
       border-radius: 2px;
+    }
+
+    section p, section ul {
+      position: relative;
+      z-index: 1;
     }
 
     section p {
@@ -152,8 +186,9 @@
         font-size: 2rem;
       }
 
-      nav a {
-        margin: 0 1rem;
+      nav.contact-links {
+        flex-direction: column;
+        gap: 0.6rem;
       }
 
       section {
@@ -169,9 +204,11 @@
   <p>AI & Automation Specialist | Technical Writer | Relationship-Driven Builder</p>
 </header>
 
-<nav>
+<nav class="contact-links">
   <a href="https://github.com/Agathos316" target="_blank">GitHub</a>
+  <span class="divider">|</span>
   <a href="https://linkedin.com/in/tim-mapperson" target="_blank">LinkedIn</a>
+  <span class="divider">|</span>
   <a href="mailto:mappersont2010@gmail.com">Email</a>
 </nav>
 
@@ -216,4 +253,8 @@
 </section>
 
 <footer>
-  &copy; 2025 Tim Mapperson. Built with purpose, clarity, and vision
+  &copy; 2025 Tim Mapperson. Built with purpose, clarity, and vision.
+</footer>
+
+</body>
+</html>
